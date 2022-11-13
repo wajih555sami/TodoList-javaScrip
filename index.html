@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="App.css" rel="stylesheet">
+</head>
+<body>
+    <div class="todo-app">
+        <h1>What's the Plan For Today?</h1>
+        <form class='todo-form' id="form">
+            
+                <div class='form-group' id="holdUpdate">
+                    <input
+                        type='text'
+                        placeholder='Ubdate a Todo'
+                        class='todo-input edit'
+                        name='text'
+                        id="inputUpdate"
+                        oonchange="updateInput(this.value)"
+                    />
+                    <button class='todo-button edit' id="btnUpdate">Update</button>
+                </div>
+            
+                <div class='form-group' id="holdAdd">
+                    <input
+                        type='text'
+                        placeholder='Add a Todo'
+                        class='todo-input'
+                        name='text'
+                        id="inputAdd"
+                    />
+                    <button class='todo-button' id="btnAdd">Add Todo</button>
+                </div>
+            
+        </form>
+        <!-- <div class="todo-row completee">
+            <div >
+              todo text
+            </div>
+            <div class='icons'>
+              <button class='edit-icon' >Edit</button>
+              <button class='delete-icon' >Delete</button>
+            </div>
+        </div> -->
+
+    </div>
+
+
+    <script src="App.js"></script>
+</body>
+</html>
